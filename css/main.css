@@ -1,0 +1,343 @@
+/* RESET */
+body {
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--greywhite);
+}
+/* END RESET */
+
+/* VAR COLORS */
+:root {
+    --greyblack: #616161;
+    --greywhite: #E1E1E1;
+    --white: white;
+}
+/* END VAR COLORS */
+
+/* GENERALS */
+html {
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+h1 {
+    font-size: 1.5rem;
+    color: var(--greyblack);
+    text-align: center;
+    margin: 1rem 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+p {
+    color: var(--greyblack);
+    text-align: center;
+    margin: 1rem 0;
+}
+
+div {
+    width: 80%;
+    background-color: var(--white);
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 1rem 0;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+nav {
+    background-color: var(--white);
+    width: 80%;
+    margin: 2rem auto;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* END GENERALS */
+
+/* HEADER */
+.list-item {
+    display: flex;
+    padding: 2rem 0;
+    width: 100%;
+}
+
+.items {
+    margin: auto;
+}
+
+.items-link i {
+    color: var(--greyblack);
+    font-size: 1.5rem;    
+    animation-name: icons-header;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes icons-header {
+    0%{}
+    50%{color: black;}
+    100%{}   
+}
+/* EDN HEADER */
+
+/* BODY */
+.main-section {
+    width: 100%;
+    background-color: transparent;
+    margin-top: 11rem;
+}
+
+.section-box {
+    width: 80%;
+    margin-bottom: 5rem;
+}
+
+.section-icons-box {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0;
+    width: 100%;
+    border-radius: 0;
+    background-color: transparent;
+}
+
+.section-icons-box i {
+    display: block;
+    margin: auto;
+    font-size: 5rem;
+    padding: 1rem 0;
+    animation-name: icons;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes icons {
+    0%{}
+    50%{color: var(--greyblack);}
+    100%{}
+}
+
+/* SKILLS */
+.main-skills {
+    background-color: transparent;
+}
+
+.title-skills {
+    margin: 2.5rem 0;
+}
+.icons-skills-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: transparent;
+    width: 100%;
+}
+
+.icons-skills-box i {
+    font-size: 4rem;
+    margin: auto;
+    padding: 1rem 0;
+}
+
+.html {
+    color: rgb(255, 136, 0);
+}
+
+.css {
+    color: rgb(4, 116, 221);
+}
+
+.tint {
+    color: rgb(192, 0, 218);
+}
+
+.linux {
+    color: rgb(0, 0, 0);
+}
+
+.tools {
+    color: var(--greyblack);
+}
+
+.level-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
+.level-skills {
+    text-align: center;
+    font-size: 1rem;
+}
+/* END SKILLS */
+
+/* ME */
+.main-me {
+    width: 100%;
+    margin-top: rem;
+    background-color: transparent;
+}
+
+.me-box {
+    width: 80%;
+    background-color: transparent;
+    margin-top: 2.5rem;
+}
+/* END ME */
+
+/* PROYECTS */
+.main-proyects {
+    margin: auto;
+    background-color: transparent;
+}
+
+.proyects-box-title {
+    margin-bottom: .5rem;
+    background-color: transparent;
+}
+
+.proyects-box-img {
+    background-color: transparent;
+    width: 100%;
+    margin: auto;
+}
+.img-proyect {
+    width: 50%;
+    display: block;
+    margin: 2rem auto;
+    border-radius: 10px;
+}
+
+/* RESPONSIVE PROYECTS */
+@media (min-width:800px) {
+    .main-proyects {
+        margin: auto;
+        background-color: transparent;
+    }
+    
+    .proyects-box-title {
+        margin-bottom: .5rem;
+        background-color: transparent;
+    }
+    
+    .proyects-box-img {
+        background-color: transparent;
+        width: 70%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .img-proyect {
+        width: 100%;
+        height: 80%;
+        display: block;
+        margin: 2rem auto;
+        border-radius: 10px;
+    }
+
+    .link-img-pro {
+        margin: 0 2.5rem;
+    }
+/* 
+    .img-center {
+        width: 20rem;
+    } */
+}
+/* END PORYECTS */
+
+/* CONTACT */
+.main-contact {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.contact-box {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.contact-box i {
+    margin: auto;
+    font-size: 2.5rem;
+    animation-name: icons;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.contact-box a {
+    margin: auto;
+}
+
+.mail {
+    color: black;
+}
+
+.face {
+    color: black;
+}
+/* RESPONSIVE TITLE */
+@media (min-width: 280px) and (max-width: 360px) {
+    .main-section {
+        width: 100%;
+        background-color: transparent;
+    }
+    
+    .section-box {
+        width: 80%;
+        margin-top: 10rem;
+    }
+
+    .section-box h1{
+        font-size: 1rem;
+    }
+    
+    .section-icons-box {
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0;
+    }
+    
+    .section-icons-box i {
+        display: block;
+        margin: auto;
+        font-size: 4rem;
+    }
+    
+    .html {
+        color: rgb(255, 136, 0);
+    }
+    
+    .css {
+        color: rgb(4, 116, 221);
+    }
+    
+    .tint {
+        color: rgb(192, 0, 218);
+    } 
+}
+/* END RESPONSIVE TITLE */
+
